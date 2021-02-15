@@ -13,11 +13,6 @@
 /* crea una classe di debug in modo da vedere le altezze - poi però ELIMINALA!!! */
 
 
-
-    /* QUESTA E' PER LA LARGHEZZA DEL CONTAINER     
-        width:1300px;
-        max-width:100%;  */
-
 *{
     margin: 0;
     padding: 0;
@@ -30,20 +25,27 @@ body{
 }
 
 .contenitore{
-    width: 1300px;
-    max-width: 70%;
+    width: 1100px;
+    max-width: 60%;
     margin: 0 auto;
 }
 
 
 /* riutilizzabili */
-
 .capitalize{
     text-transform: capitalize;
 }
 
 .uppercase{
     text-transform: uppercase;
+}
+
+.green{
+    color: #00aba8;
+}
+
+.white{
+    color: #fff;
 }
 
 /* usa il 900 per il jumbotron */
@@ -60,7 +62,7 @@ body{
     align-items: center;
     color: #c0c2d1;
     height: 2.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 #h-top{
@@ -94,6 +96,7 @@ body{
     height: 600px;
     background-image: url(../img/bg-4.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .header-bottom{
@@ -107,11 +110,22 @@ ul.options{
 
 ul li{
     list-style: none;
-    padding: 0 15px;
+    padding: 0 10px;
     color: #f9f9f9;
 }
 
-.header-bottom li button{
+
+
+/* jumbotron */
+.jumbotron{
+    color: #c0c2d1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-green{
     padding: 10px;
     background-color: #008685;
     color: white;
@@ -119,3 +133,32 @@ ul li{
     border-radius: 5px;
 }
 
+.btn-transp{
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #008685;
+    border-radius: 5px;
+}
+
+.jumbotron h2{
+    padding-top: 10px;
+    width: 400px;
+    font-size: 3.5rem;
+}
+
+span.sottolineo{
+    background-image: linear-gradient(transparent 0.6em, #006967 0.6em, #006967 1em);
+    border-radius: 5px;
+    
+}
+
+p.title{
+    width: 400px;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+
+.jumbotron button{
+    margin-right: 10px;
+}
