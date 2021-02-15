@@ -5,33 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- link cdn fontawesome -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <!-- link vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>NexGen</title>
 </head>
 <body>
 
-        <!-- PREVEDI UN CONTAINER PRINCIPALE IN QUANTO LA LARGHEZZA DELLE MAGGIOR PARTI DELLE 
-        SEZIONI E' RIDOTTA RISPETTO LO SFONDO -->
 
     <header>
-        <!-- header top -->
-            <!-- qui va inserita la parte degli orari -->
-        <!-- /header top -->
 
+        <section id="h-top">
+
+            <div class="header-top contenitore">
+
+                <div class="capitalize">open hours: mon - sat - 9:00 - 18:00</div>
+                <div class="contatti">
+                    <div class="det-contatti"><i class="fas fa-phone-alt"></i>&plus;1&#40;305&#41; 1234-5678</div>
+                    <div class="det-contatti"><i class="fas fa-envelope"></i>hello&#64;example.com</div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- header bottom -->
+            <!-- qui va inserita la parte con la navbar -->
+        <!-- /header bottom -->
+
+        <section id="h-bottom">
+
+            <div class="header-bottom contenitore">
+            
+                <div class="logo">qui va il logo che manca</div>
+                <nav>
+                    <ul class="options uppercase">
+                        <li v-for="elements in menu">{{elements}}</li>
+                        <li><i class="far fa-user"></i></li>
+                        <li><button class="uppercase">get in touch</button></li>
+                    </ul>
+                </nav>
+            
+            </div>
+
+        </section>
 
         <!-- jumbotron -->
             <!-- qui va inserita l'immagine con il titolo grande e la descrizione -->
+            <!-- CHIEDI INFO SU PAROLE EVIDENZIATE !!!
 
 
-            <!-- CHIEDI INFO SU PAROLE EVIDENZIATE,
+                QUESTO VA ASSEGNATO DIRETTAMENTE ALLA PORZIONE DI TESTO CHE VOGLIO SOTTOLINEARE
+                background-image: linear-gradient(transparent 0.6em, #EBEBEB 0.6em, #EBEBEB 1em);
+
                 mi sembra un box-shadow.. forse questa è la cosa un po piu complicata di css.
             -->
-
-
-            <!-- qui va inserita la parte con la navbar -->
         <!-- /jumbotron -->
+
     </header>
 
     <main>
@@ -63,7 +102,10 @@
             <!-- qui va inserito un testo centrato per tutta la sezione -->
             <!-- tieni conto che nella linea da 1 a 5 sia il numero 1 che il numero 5 sono al di fuori
             della larghezza del container generato inizialmente -->
-            <!-- forse il punto con il numero conviene farlo con il position -->
+            <!-- 
+                forse il punto con il numero conviene farlo con il position, 
+                mentre per la linea inserisco o un hr nell'Html oppure un content: " " nel Css
+            -->
         <!-- /sezione process -->
 
 
@@ -85,7 +127,9 @@
     
 
 
-    <!-- IL LAYOUT RIMANE PIU SEMPLICE STRUTTURARLO CON I FLEX, 
+    <!-- 
+        
+        IL LAYOUT RIMANE PIU SEMPLICE STRUTTURARLO CON I FLEX, 
 
         MA SE DOBBIAMO AVERE UNA SICURELLA AL 101% ALLORA 
 
@@ -100,7 +144,9 @@
     -->
 
 
-    <!-- PER LA PARTE DI JS (UTILIZZARE VUE) INSERISCI GLI LI DA UN ARRAY E CICLA NELL'HTML
+    <!-- 
+        
+        PER LA PARTE DI JS (UTILIZZARE VUE) INSERISCI GLI LI DA UN ARRAY E CICLA NELL'HTML
     
         LE INTERAZIONI NUMERICHE E' MEGLIO FARLE CON JAVASCRIPT O CON IL CSS?
 
@@ -116,6 +162,6 @@
 
 
 
-    <!-- script js -->
+    <script src="vue/script.js"></script>
 </body>
 </html>

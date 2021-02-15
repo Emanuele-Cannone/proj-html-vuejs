@@ -13,3 +13,109 @@
 /* crea una classe di debug in modo da vedere le altezze - poi però ELIMINALA!!! */
 
 
+
+    /* QUESTA E' PER LA LARGHEZZA DEL CONTAINER     
+        width:1300px;
+        max-width:100%;  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightcoral;
+}
+
+.contenitore{
+    width: 1300px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+/* riutilizzabili */
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+/* usa il 900 per il jumbotron */
+/* usa il 700 per i titoli delle varie sezioni */
+/* usa il 400 per le descrizioni */
+
+
+
+/* header-top */
+.header-top,
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c0c2d1;
+    height: 2.5rem;
+    font-size: 0.9rem;
+}
+
+#h-top{
+    background-color: #1c333f;
+}
+
+.contatti{
+    display: flex;
+}
+
+.det-contatti{
+    padding: 0 10px;
+}
+
+.det-contatti > i{
+    padding: 0 10px;
+}
+
+.social{
+    padding-left: 10px;
+}
+
+.social > i {
+    padding: 0 15px;
+}
+
+
+
+/* header-bottom */
+#h-bottom{
+    height: 600px;
+    background-image: url(../img/bg-4.jpg);
+    background-size: cover;
+}
+
+.header-bottom{
+    padding-top: 13px;
+}
+
+ul.options{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 15px;
+    color: #f9f9f9;
+}
+
+.header-bottom li button{
+    padding: 10px;
+    background-color: #008685;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
