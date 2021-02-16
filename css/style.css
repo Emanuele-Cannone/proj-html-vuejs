@@ -496,3 +496,53 @@ p.title{
 #process .proprieta p{
     font-size: 0.8rem;
 }
+
+
+
+/* sezione trusted */
+/* section human */
+#trusted{
+    background-color: #ecf5ed;
+}
+
+#trusted .contenitore:first-child{
+    text-align: center;
+}
+
+#trusted .contenitore p:first-child{
+    font-size: 0.8rem;
+    padding-top: 30px;
+}
+
+#trusted h2{
+    margin: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+
+.articoli{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px 30px;
+    margin: 40px 10px;
+    width: calc(100% / 3 - 10px);
+    border-radius: 10px;
+}
+
+.articoli img{
+    width: 100px;
+    padding-bottom: 15px;
+}
+
+.articoli p{
+    padding-top: 10px;
+    color: #c0c2d1;
+}
+
+.cc{
+    margin-left: 25px;
+    margin-right: 25px;
+}
