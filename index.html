@@ -15,218 +15,263 @@
     <title>NexGen</title>
 </head>
 <body>
+    <div id="app">
 
+        <header>
 
-    <header>
+            <!-- header-top -->
+            <section id="h-top">
 
-        <!-- header-top -->
-        <section id="h-top">
+                <div class="header-top contenitore">
 
-            <div class="header-top contenitore">
+                    <div class="capitalize">open hours: mon - sat - 9:00 - 18:00</div>
+                    <div class="contatti">
+                        <div class="det-contatti"><i class="fas fa-phone-alt"></i>&plus;1&#40;305&#41; 1234-5678</div>
+                        <div class="det-contatti"><i class="fas fa-envelope"></i>hello&#64;example.com</div>
+                        <div class="social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
 
-                <div class="capitalize">open hours: mon - sat - 9:00 - 18:00</div>
-                <div class="contatti">
-                    <div class="det-contatti"><i class="fas fa-phone-alt"></i>&plus;1&#40;305&#41; 1234-5678</div>
-                    <div class="det-contatti"><i class="fas fa-envelope"></i>hello&#64;example.com</div>
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </section>
+
+            <!-- header bottom -->
+            <section id="h-bottom">
+
+                <div class="header-bottom contenitore">
+                
+                    <div class="logo">qui va il logo che manca</div>
+                    <nav>
+                        <ul class="options uppercase">
+                            <li v-for="elements in menu">{{elements}}</li>
+                            <li><i class="far fa-user"></i></li>
+                            <li><button class="uppercase btn-green">get in touch</button></li>
+                        </ul>
+                    </nav>
+                
+                </div>
+
+                <!-- jumbotron -->
+                <div class="jumbotron contenitore">
+                    <p class="green uppercase">human resources</p>
+                    <h2 class="white capitalize">get more <span class="sottolineo">productivity</span></h2>
+                    <p class="title">Planning, recruitment and selection process and performance evaluation of employees.</p>
+                    <div>
+                        <button class="btn-green uppercase">get in touch</button>
+                        <button class="btn-transp uppercase">read more</button>
                     </div>
                 </div>
 
-            </div>
+            </section>
 
-        </section>
+        </header>
 
-        <!-- header bottom -->
-        <section id="h-bottom">
+        <main>
 
-            <div class="header-bottom contenitore">
-            
-                <div class="logo">qui va il logo che manca</div>
-                <nav>
-                    <ul class="options uppercase">
-                        <li v-for="elements in menu">{{elements}}</li>
-                        <li><i class="far fa-user"></i></li>
-                        <li><button class="uppercase btn-green">get in touch</button></li>
+            <!-- sezione human -->
+            <section id="human">
+
+                <div class="punti contenitore">
+
+                    <div class="box">
+                        <div class="icona"><i class="far fa-user"></i></div>
+                        <h4>human capital</h4>
+                        <p>Humanizing business: Harness the power of technology to improve the way people work.</p>
+                    </div>
+
+                    <div class="box cc">
+                        <div class="icona"><i class="fas fa-chart-pie"></i></div>
+                        <h4>core business</h4>
+                        <p>It takes innovative approaches to transform, modernize, and run existing platforms.</p>
+                    </div>
+
+                    <div class="box">
+                        <div class="icona"><i class="fas fa-plus"></i></div>
+                        <h4>performance</h4>
+                        <p>Archieving maximum impact and value from investments in finance and supply chain.</p>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <!-- sezione company -->
+            <section id="company" class="flex">
+                <div class="effettoUp"></div>
+
+                <div id="bloccosx">
+
+                    <div class="descrizione-company contenitore">
+
+                        <p class="uppercase green">about the network</p>
+                        <h2 class="capitalize"><span class="capitalize evidenziatore">the</span> company</h2>
+                        <p class="lightgrey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum quaerat voluptas dolorem ipsam obcaecati dicta</p>
+                        
+                        <div class="dati flex">
+                        
+                            <div class="specifica-dati flex-column" id="employees">
+                                <div class="green">0</div>
+                                <h4 class="capitalize">employees</h4>
+                                <p class="lightgrey">lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <div class="specifica-dati flex-column" id="employees">
+                                <div class="green">0</div>
+                                <h4 class="capitalize">partners</h4>
+                                <p class="lightgrey">lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                            <div class="specifica-dati flex-column" id="employees">
+                                <div class="green">0</div>
+                                <h4 class="capitalize">costumers</h4>
+                                <p class="lightgrey">lorem ipsum dolor sit amet.</p>
+                            </div>
+                        
+                        </div>
+
+                        <button class="uppercase btn-green">get in touch</button>
+                        
+                        <button class="uppercase btn-white">read more</button>
+
+                    </div>
+
+                </div>
+
+                <div id="bloccodx"></div>
+                <div class="effettoDown"></div>
+            </section>
+
+            <!-- sezione actions -->
+            <section id="actions">
+               
+                <div class="contenitore">
+
+                    <p class="uppercase green">we do more for everyone</p>
+                    <h2 class="capitalize">actions &amp; <span class="capitalize">projects</span></h2>
+                    <ul>
+                        <li class="uppercase lightgrey" v-for="el in projects">{{el}}</li>
                     </ul>
-                </nav>
-            
-            </div>
 
-            <!-- jumbotron -->
-            <div class="jumbotron contenitore">
-                <p class="green uppercase">human resources</p>
-                <h2 class="white capitalize">get more <span class="sottolineo">productivity</span></h2>
-                <p class="title">Planning, recruitment and selection process and performance evaluation of employees.</p>
-                <div>
-                    <button class="btn-green uppercase">get in touch</button>
-                    <button class="btn-transp uppercase">read more</button>
-                </div>
-            </div>
-
-        </section>
-
-    </header>
-
-    <main>
-
-        <!-- sezione human -->
-        <section id="human">
-
-            <div class="punti contenitore">
-
-                <div class="box">
-                    <div class="icona"><i class="far fa-user"></i></div>
-                    <h4>human capital</h4>
-                    <p>Humanizing business: Harness the power of technology to improve the way people work.</p>
                 </div>
 
-                <div class="box cc">
-                    <div class="icona"><i class="fas fa-chart-pie"></i></div>
-                    <h4>core business</h4>
-                    <p>It takes innovative approaches to transform, modernize, and run existing platforms.</p>
-                </div>
+                <div class="contenitore immagini flex">
 
-                <div class="box">
-                    <div class="icona"><i class="fas fa-plus"></i></div>
-                    <h4>performance</h4>
-                    <p>Archieving maximum impact and value from investments in finance and supply chain.</p>
-                </div>
+                    <div class="immagine" id="img-uno">
 
+                        <div class="oscuramento"></div>                        
+                        <p>Academic professional program in social media</p>
 
-            </div>
-
-        </section>
-
-
-            <!-- TRA LE DUE SEZIONI C'E' UN INTERSEZIONE - DECIDI SE DARLO ALLA SEZIONE COMPANY
-            UP E DOWN OPPURE A TUTTE E DUE LE SEZIONI (PUNTI E COMPANY) IN DOWN -->
-
-        <!-- sezione company -->
-        <section id="company" class="flex">
-            <div class="effettoUp"></div>
-
-            <div id="bloccosx">
-
-                <div class="descrizione-company contenitore">
-
-                    <p class="uppercase green">about the network</p>
-                    <h2 class="capitalize"><span class="capitalize evidenziatore">the</span> company</h2>
-                    <p class="lightgrey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum quaerat voluptas dolorem ipsam obcaecati dicta</p>
-                    
-                    <div class="dati flex">
-                    
-                        <div class="specifica-dati flex-column" id="employees">
-                            <div class="green">0</div>
-                            <h4 class="capitalize">employees</h4>
-                            <p class="lightgrey">lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <div class="specifica-dati flex-column" id="employees">
-                            <div class="green">0</div>
-                            <h4 class="capitalize">partners</h4>
-                            <p class="lightgrey">lorem ipsum dolor sit amet.</p>
-                        </div>
-
-                        <div class="specifica-dati flex-column" id="employees">
-                            <div class="green">0</div>
-                            <h4 class="capitalize">costumers</h4>
-                            <p class="lightgrey">lorem ipsum dolor sit amet.</p>
-                        </div>
-                    
                     </div>
 
-                    <button class="uppercase btn-green">get in touch</button>
+                    <div class="immagine" id="img-due">
+
+                        <div class="oscuramento"></div>
+                        <p>Presindent's speech at the annual meeting</p>
+
+                    </div>
+
+                    <div class="immagine" id="img-tre">
                     
-                    <button class="uppercase btn-white">read more</button>
-
+                        <div class="oscuramento"></div>
+                        <p>International business trip in Shanghai</p>
+                    
+                    </div>
+                    
+                    <div class="immagine" id="img-quattro">
+                    
+                        <div class="oscuramento"></div>
+                        <p>Technologu workshop with education theme</p>
+                    
+                    </div>
+                    
+                    <div class="immagine" id="img-cinque">
+                    
+                        <div class="oscuramento"></div>
+                        <p>Donation of clothes and food to the partner NGO</p>
+                    
+                    </div>
+                    
+                    <div class="immagine" id="img-sei">
+                    
+                        <div class="oscuramento"></div>
+                        <p>Confraternization of the prosurement team</p>
+                    
+                    </div>
+                
                 </div>
-
-            </div>
-
-            <div id="bloccodx"></div>
-            <div class="effettoDown"></div>
-        </section>
-
-            <!-- qui vanno inseriti i 2 blocchi -->
-            <!-- il blocco di sx e' suddiviso in altri 2 blocchi e devi scrivere in quello di dx -->
-
-            <!-- CHIEDI INFO SU CONTATORE ALLO SCROLL - NECESSARIO? -->
-
-        <!-- /sezione company -->
+            
+            </section>
 
 
-        <!-- sezione actions -->
-        <!-- inserisci 1 riga con il flex wrap sul 4 elemento (solo 3 per riga) -->
-        <!-- /sezione actions -->
+            <!-- sezione process -->
+                <!-- qui va inserito un testo centrato per tutta la sezione -->
+                <!-- tieni conto che nella linea da 1 a 5 sia il numero 1 che il numero 5 sono al di fuori
+                della larghezza del container generato inizialmente -->
+                <!-- 
+                    forse il punto con il numero conviene farlo con il position, 
+                    mentre per la linea inserisco o un hr nell'Html oppure un content: " " nel Css
+                -->
+            <!-- /sezione process -->
 
 
-        <!-- sezione process -->
-            <!-- qui va inserito un testo centrato per tutta la sezione -->
-            <!-- tieni conto che nella linea da 1 a 5 sia il numero 1 che il numero 5 sono al di fuori
-            della larghezza del container generato inizialmente -->
-            <!-- 
-                forse il punto con il numero conviene farlo con il position, 
-                mentre per la linea inserisco o un hr nell'Html oppure un content: " " nel Css
+            <!-- sezione trusted -->
+                    <!-- inserisci un titolo ed una descrizione -->
+                    <!-- poi fai il copia e incolla della sezione punti -->
+            <!-- /sezione trusted -->
+
+        </main>
+
+        <footer>
+
+            <!-- sempre dentro il container crea 2 blocchi:
+            
+                il sx avrà un grow 1 con un form 
             -->
-        <!-- /sezione process -->
 
-
-        <!-- sezione trusted -->
-                <!-- inserisci un titolo ed una descrizione -->
-                <!-- poi fai il copia e incolla della sezione punti -->
-        <!-- /sezione trusted -->
-
-    </main>
-
-    <footer>
-
-        <!-- sempre dentro il container crea 2 blocchi:
+        </footer>
         
-            il sx avrà un grow 1 con un form 
+
+
+        <!-- 
+            
+            IL LAYOUT RIMANE PIU SEMPLICE STRUTTURARLO CON I FLEX, 
+
+            MA SE DOBBIAMO AVERE UNA SICURELLA AL 101% ALLORA 
+
+            E' MEGLIO LAVORARE CON IL CLEARFIX - IN TEORIA HA UNA COPERTURA DI DISTRIBUZIONE
+            
+            (NON SO COME SI DICE) PIU ALTA RISPETTO AI FLEX.
+
+            NEL SITO UFFICIALE OLTRE ALL'INTERAZIONE NUMERICA C'E' L'HEADER TOP CHE SCROLLANDO SCOMPARE 
+
+            E LA NAVBAR DELL'HEADER RIMANE IN VISTA, IN QUEL CASO CAMBIARE LA STRUTTURA!!!
+        
         -->
 
-    </footer>
-    
 
-
-    <!-- 
+        <!-- 
+            
+            PER LA PARTE DI JS (UTILIZZARE VUE) INSERISCI GLI LI DA UN ARRAY E CICLA NELL'HTML
         
-        IL LAYOUT RIMANE PIU SEMPLICE STRUTTURARLO CON I FLEX, 
+            LE INTERAZIONI NUMERICHE E' MEGLIO FARLE CON JAVASCRIPT O CON IL CSS?
 
-        MA SE DOBBIAMO AVERE UNA SICURELLA AL 101% ALLORA 
+            (" TUTTO QUELLO CHE E' POSSIBILE FARE CON IL CSS FATELO CON IL CSS POI PASSATE A JAVASCRIPT "  cit. Cristina)
 
-        E' MEGLIO LAVORARE CON IL CLEARFIX - IN TEORIA HA UNA COPERTURA DI DISTRIBUZIONE
+            SE CI SONO CON I TEMPI SALVO IN UN ARRAY I DATI INSERITI DALL'UTENTE NEL FORM
         
-        (NON SO COME SI DICE) PIU ALTA RISPETTO AI FLEX.
-
-        NEL SITO UFFICIALE OLTRE ALL'INTERAZIONE NUMERICA C'E' L'HEADER TOP CHE SCROLLANDO SCOMPARE 
-
-        E LA NAVBAR DELL'HEADER RIMANE IN VISTA, IN QUEL CASO CAMBIARE LA STRUTTURA!!!
-    
-    -->
-
-
-    <!-- 
-        
-        PER LA PARTE DI JS (UTILIZZARE VUE) INSERISCI GLI LI DA UN ARRAY E CICLA NELL'HTML
-    
-        LE INTERAZIONI NUMERICHE E' MEGLIO FARLE CON JAVASCRIPT O CON IL CSS?
-
-        (" TUTTO QUELLO CHE E' POSSIBILE FARE CON IL CSS FATELO CON IL CSS POI PASSATE A JAVASCRIPT "  cit. Cristina)
-
-        SE CI SONO CON I TEMPI SALVO IN UN ARRAY I DATI INSERITI DALL'UTENTE NEL FORM
-    
-    -->
+        -->
 
 
 
 
 
 
-
+    </div>
     <script src="vue/script.js"></script>
 </body>
 </html>

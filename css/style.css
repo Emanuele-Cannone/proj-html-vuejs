@@ -65,6 +65,7 @@ body{
     color: #008685;
     background-color: #d6edee;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /* usa il 900 per il jumbotron */
@@ -256,7 +257,6 @@ p.title{
     background-color: white;
     height: 100%;
     width: 50%;
-    justify-content: flex-end;
 }
 
 .descrizione-company{
@@ -324,4 +324,110 @@ p.title{
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* sezione actions */
+#actions{
+    background-color: #111017;
+    text-align: center;
+    color: #fff;
+}
+
+#actions .contenitore > p{
+    font-size: 0.6rem;
+}
+
+#actions .contenitore:first-child{
+    padding-top: 70px;
+}
+
+#actions .contenitore:last-child{
+    padding-bottom: 70px;
+}
+
+#actions h2{
+    margin: 20px 0 30px 0;
+    font-size: 1.8rem;
+}
+
+#actions h2 > span{
+    background-color: #082129;
+    padding: 5px 10px; 
+    border-radius: 5px;
+}
+
+#actions ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+#actions ul li:first-child{
+    background-color: #082129;
+    padding: 5px 10px;   
+    border-radius: 5px;
+}
+
+#actions .immagini{
+    flex-wrap: wrap;
+}
+
+#actions .immagine{
+    width: calc(100% / 3 - 30px);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.immagine:nth-child(3n+2){
+    margin: 0 15px;
+}
+
+.immagine .oscuramento{
+    background: rgba(0, 0, 0, 0.432);
+    height: 100%;
+}
+
+.immagine{
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.immagine p{
+    font-weight: 700;
+    width: 70%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+
+#img-uno{
+    background-image: url(../img/project-1.jpg);
+}
+
+#img-due{
+    background-image: url(../img/project-2.jpg);
+}
+
+#img-tre{
+    background-image: url(../img/project-3.jpg);
+}
+
+#img-quattro{
+    background-image: url(../img/project-4.jpg);
+}
+
+#img-cinque{
+    background-image: url(../img/project-5.jpg);
+}
+
+#img-sei{
+    background-image: url(../img/project-6.jpg);
 }
