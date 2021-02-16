@@ -128,7 +128,7 @@ ul.options{
     align-items: center;
 }
 
-ul li{
+#h-bottom ul li{
     list-style: none;
     padding: 0 10px;
     color: #f9f9f9;
@@ -270,6 +270,7 @@ p.title{
 
 .descrizione-company h2{
     margin: 20px 0;
+    font-size: 1.8rem;
 }
 
 .specifica-dati:nth-child(2){
@@ -378,7 +379,7 @@ p.title{
     width: calc(100% / 3 - 30px);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -430,4 +431,68 @@ p.title{
 
 #img-sei{
     background-image: url(../img/project-6.jpg);
+}
+
+
+
+/* section process */
+#process{
+    height: 500px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#process h2{
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+#process .lista{
+    position: relative;
+}
+
+#process hr{
+    background-color: #d6edee;
+    height: 3px;
+    border: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+#process .contenitore p:first-child{
+    font-size: 0.8rem;
+    padding-top: 70px;
+}
+
+#process .contenitore p:last-child{
+    width: 60%;
+    margin: 0 auto 40px auto;
+    font-size: 0.9rem;
+}
+
+.proprieta{
+    width: calc(100% / 5);
+    max-width: 130px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#process .proprieta .evidenziatore{
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+#process .proprieta h5{
+    padding: 15px 0;
+    font-weight: 900;
+}
+
+#process .proprieta p{
+    font-size: 0.8rem;
 }
