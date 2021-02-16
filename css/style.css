@@ -57,6 +57,16 @@ body{
     color: #fff;
 }
 
+.lightgrey{
+    color: #c0c2d1;
+}
+
+.evidenziatore{
+    color: #008685;
+    background-color: #d6edee;
+    padding: 5px 10px;
+}
+
 /* usa il 900 per il jumbotron */
 /* usa il 700 per i titoli delle varie sezioni */
 /* usa il 400 per le descrizioni */
@@ -227,26 +237,9 @@ p.title{
 
 
 /* sezione company */
-
 #company{
-    height: 500px;
+    height: 600px;
     position: relative;
-}
-
-#bloccosx{
-    background-color: white;
-    height: 100%;
-    width: 50%;
-    justify-content: flex-end;
-}
-
-#bloccodx{
-    /* background-color: aqua; */
-    width: 50%;
-    background-image: url(../img/about-5.jpg);
-    height: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
 .effettoUp{
@@ -259,6 +252,70 @@ p.title{
     transform: translate(-50%, -50%);
 }
 
+#bloccosx{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.descrizione-company{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    width: 30%;
+    padding-right: 50px;
+}
+
+.descrizione-company h2{
+    margin: 20px 0;
+}
+
+.specifica-dati:nth-child(2){
+    margin: 0 30px;
+}
+
+.specifica-dati > .green{
+    margin-top: 50px;
+}
+
+.specifica-dati h4{
+    margin: 10px 0;
+}
+
+.specifica-dati p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.specifica-dati .green{
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.specifica-dati p{
+    font-size: 15px;
+}
+
+#company .btn-green{
+    margin-right: 10px;
+    padding: 10px 30px;
+}
+
+#company .btn-white{
+    padding: 10px 30px;
+}
+
+#bloccodx{
+    width: 50%;
+    background-image: url(../img/about-5.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 .effettoDown{
     height: 50px;
     width: 100px;
@@ -267,8 +324,4 @@ p.title{
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#company .btn-green{
-    margin-right: 10px;
 }
