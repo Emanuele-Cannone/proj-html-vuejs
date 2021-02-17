@@ -77,24 +77,11 @@
 
                 <div class="punti contenitore">
 
-                    <div class="box">
-                        <div class="icona"><i class="far fa-user"></i></div>
-                        <h4>human capital</h4>
-                        <p>Humanizing business: Harness the power of technology to improve the way people work.</p>
+                    <div class="box" v-for="tipi in human">
+                        <div class="icona"><i :class="tipi.icon"></i></div>
+                        <h4>{{tipi.title}}</h4>
+                        <p>{{tipi.description}}</p>
                     </div>
-
-                    <div class="box cc">
-                        <div class="icona"><i class="fas fa-chart-pie"></i></div>
-                        <h4>core business</h4>
-                        <p>It takes innovative approaches to transform, modernize, and run existing platforms.</p>
-                    </div>
-
-                    <div class="box">
-                        <div class="icona"><i class="fas fa-plus"></i></div>
-                        <h4>performance</h4>
-                        <p>Archieving maximum impact and value from investments in finance and supply chain.</p>
-                    </div>
-
 
                 </div>
 
@@ -114,22 +101,10 @@
                         
                         <div class="dati flex">
                         
-                            <div class="specifica-dati flex-column">
-                                <div class="green">0</div>
-                                <h4 class="capitalize">employees</h4>
-                                <p class="lightgrey">lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="specifica-dati flex-column">
-                                <div class="green">0</div>
-                                <h4 class="capitalize">partners</h4>
-                                <p class="lightgrey">lorem ipsum dolor sit amet.</p>
-                            </div>
-
-                            <div class="specifica-dati flex-column">
-                                <div class="green">0</div>
-                                <h4 class="capitalize">costumers</h4>
-                                <p class="lightgrey">lorem ipsum dolor sit amet.</p>
+                            <div class="specifica-dati flex-column" v-for="key in dates">
+                                <div class="green">{{key.number}}</div>
+                                <h4 class="capitalize">{{key.type}}</h4>
+                                <p class="lightgrey">{{key.specific}}</p>
                             </div>
                         
                         </div>
@@ -219,32 +194,13 @@
                 <div class="lista">
                     
                     <hr>
+
                     <ul class="flex">
 
-                        <li class="proprieta flex-column">
-                            <div class="numero evidenziatore">01</div>
-                            <h5>Collection of information</h5>
-                            <p class="lightgrey">Lorem ipsum dolor sit amet consectetur</p>
-                        </li>
-                        <li class="proprieta flex-column">
-                            <div class="numero evidenziatore">02</div>
-                            <h5>Strategic planning</h5>
-                            <p class="lightgrey">Lorem ipsum dolor sit amet consectetur</p>
-                        </li>
-                        <li class="proprieta flex-column">
-                            <div class="numero evidenziatore">03</div>
-                            <h5>Assignment of responsibilities</h5>
-                            <p class="lightgrey">Lorem ipsum dolor sit amet consectetur</p>
-                        </li>
-                        <li class="proprieta flex-column">
-                            <div class="numero evidenziatore">04</div>
-                            <h5>Formatting process</h5>
-                            <p class="lightgrey">Lorem ipsum dolor sit amet consectetur</p>
-                        </li>
-                        <li class="proprieta flex-column">
-                            <div class="numero evidenziatore">05</div>
-                            <h5>Continuity formalization</h5>
-                            <p class="lightgrey">Lorem ipsum dolor sit amet consectetur</p>
+                        <li class="proprieta flex-column" v-for="(el, index) in process">
+                            <div class="numero evidenziatore">0{{index + 1}}</div>
+                            <h5>{{el.title}}</h5>
+                            <p class="lightgrey">{{el.description}}</p>
                         </li>
 
                     </ul>
@@ -265,23 +221,10 @@
             
                 <div class="flex contenitore">
             
-                    <div class="articoli">
-                        <img src="img/logo-1.png" alt="logo-1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis ipsum ut aliquam, eaque eius suscipit fugiat a corporis dolores saepe minima quibusdam</p>
-                        <p>alias adipisci praesentium minus natus distinctio itaque?</p> 
-                    </div>
-
-                    <div class="articoli">
-                        <img src="img/logo-2.png" alt="logo-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis ipsum ut aliquam, eaque eius suscipit fugiat a corporis dolores saepe minima quibusdam</p>
-                        <p>alias adipisci praesentium minus natus distinctio itaque?</p>
-                    </div>
-
-                    <div class="articoli">
-                        <img src="img/logo-3.png" alt="logo-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nobis ipsum ut aliquam, eaque eius suscipit fugiat a corporis dolores saepe minima quibusdam</p>
-                        <p>alias adipisci praesentium minus natus distinctio itaque?</p>
-                        
+                    <div class="articoli" v-for="par in articles">
+                        <img :src="'img/'+ par.img " :alt='par.alt'>
+                        <p>{{par.descriptionUp}}</p>
+                        <p>{{par.descriptionDOwn}}</p> 
                     </div>
             
                 </div>
@@ -293,83 +236,53 @@
         <footer>
 
             <div class="contenitore flex">
+
                 <div class="footer-sx">
 
                     <p class="uppercase green">send a message</p>
                     <h2 class="capitalize white">get in <span class="evidenziatore">touch</span></h2>
                     <p class="lightgrey">We will respond to your message as soon as possible</p>
-                    <div class="contattaci flex">
+                   <div class="contattaci flex">
+
                         <div class="row-up flex">
+
                             <input type="text" placeholder="Name">
                             <input type="text" placeholder="Email">
                             <input type="text" placeholder="Phone">
                             <input id="more-info" type="text" placeholder="More Info">
                             <div class="scelta"><i class="fas fa-angle-down"></i></div>
+                        
                         </div>
+                    
                     </div>
+
                     <input id="message" type="text" placeholder="Message">
                     <button class="btn-green uppercase">send</button>
 
                 </div>
 
                 <div class="footer-dx">
+
                     <h4 class="white">Example Inc.</h4>
                     <p class="lightgrey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed,</p>
                     <p class="lightgrey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sed,</p>
+                    
                     <ul class="green">
-                        <li><i class="fas fa-phone-alt"></i>&plus;1&#40;305&#41; 1234-5678</li>
-                        <li><i class="fas fa-envelope"></i>hello&#64;example.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</li>
+                    
+                        <li v-for="det in contacts"><i :class="det.icon"></i>{{det.details}}</li>
                         <li><button class="btn-transp uppercase">view map</button></li>
+                    
                     </ul>
+                
                 </div>
+            
             </div>
 
-
-            <!-- sempre dentro il container crea 2 blocchi:
-            
-                il sx avrà un grow 1 con un form 
-            -->
-
         </footer>
-        
-
-
-        <!-- 
-            
-            IL LAYOUT RIMANE PIU SEMPLICE STRUTTURARLO CON I FLEX, 
-
-            MA SE DOBBIAMO AVERE UNA SICURELLA AL 101% ALLORA 
-
-            E' MEGLIO LAVORARE CON IL CLEARFIX - IN TEORIA HA UNA COPERTURA DI DISTRIBUZIONE
-            
-            (NON SO COME SI DICE) PIU ALTA RISPETTO AI FLEX.
-
-            NEL SITO UFFICIALE OLTRE ALL'INTERAZIONE NUMERICA C'E' L'HEADER TOP CHE SCROLLANDO SCOMPARE 
-
-            E LA NAVBAR DELL'HEADER RIMANE IN VISTA, IN QUEL CASO CAMBIARE LA STRUTTURA!!!
-        
-        -->
-
-
-        <!-- 
-            
-            PER LA PARTE DI JS (UTILIZZARE VUE) INSERISCI GLI LI DA UN ARRAY E CICLA NELL'HTML
-        
-            LE INTERAZIONI NUMERICHE E' MEGLIO FARLE CON JAVASCRIPT O CON IL CSS?
-
-            (" TUTTO QUELLO CHE E' POSSIBILE FARE CON IL CSS FATELO CON IL CSS POI PASSATE A JAVASCRIPT "  cit. Cristina)
-
-            SE CI SONO CON I TEMPI SALVO IN UN ARRAY I DATI INSERITI DALL'UTENTE NEL FORM
-        
-        -->
-
-
-
-
-
 
     </div>
+
     <script src="vue/script.js"></script>
+    
 </body>
 </html>
