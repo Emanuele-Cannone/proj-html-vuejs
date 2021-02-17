@@ -21,7 +21,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: lightcoral;
 }
 
 .contenitore{
@@ -29,6 +28,7 @@ body{
     max-width: 60%;
     margin: 0 auto;
 }
+
 
 
 /* riutilizzabili */
@@ -327,6 +327,8 @@ p.title{
     transform: translate(-50%, -50%);
 }
 
+
+
 /* sezione actions */
 #actions{
     background-color: #111017;
@@ -500,7 +502,6 @@ p.title{
 
 
 /* sezione trusted */
-/* section human */
 #trusted{
     background-color: #ecf5ed;
 }
@@ -519,7 +520,6 @@ p.title{
     font-size: 1.8rem;
     font-weight: 900;
 }
-
 
 .articoli{
     display: flex;
@@ -542,7 +542,96 @@ p.title{
     color: #c0c2d1;
 }
 
-.cc{
-    margin-left: 25px;
-    margin-right: 25px;
+
+
+/* footer */
+footer{
+    height: 500px;
+    background-color: black;
+    padding-top: 60px;
+}
+
+footer input{
+    background-color: #1d1d23;
+    outline: 0;
+    color: #fff;
+}
+
+.footer-sx{
+    flex-grow: 2;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.footer-sx h2{
+    margin: 15px 0;
+}
+
+.footer-sx .evidenziatore{
+    color: white;
+    background-color: #03282e;
+}
+
+.row-up{
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.row-up input{
+    height: 40px;
+    width: calc(100% / 2 - 5px);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 7px;
+}
+
+.row-up input:nth-child(odd){
+    margin-right: 10px;
+}
+
+.row-up input::placeholder,
+input#message::placeholder{
+    color: lightgray;
+}
+
+.scelta{
+    position: absolute;
+    top: 80%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: lightgray;
+}
+
+input#message{
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 7px;
+    padding-bottom: 90px;
+    margin-bottom: 20px;
+}
+
+.footer-dx{
+    width: calc(100% / 2);
+}
+
+.footer-dx p{
+    padding: 10px 0;
+}
+
+.footer-dx ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+
+.footer-dx li i{
+    margin-right: 15px;
+    background-color: #082129;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 0.9rem;
 }
